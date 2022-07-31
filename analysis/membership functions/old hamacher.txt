@@ -1,0 +1,28 @@
+function f=hamacher(x,y)
+f = zeros(numel(x),1);
+for j=1:numel(x)
+    if x(j)==0 && y(j)==0
+        f(j,1)=0;
+    else 
+        f(j,1)=(x(j)*y(j))/(x(j)+y(j)-(x(j)*y(j)));
+    end
+end
+end
+
+
+
+
+plotting hamacher
+
+function f=hamacher(x,y)
+f = zeros(length(x),length(y));
+for i = 1:length(x)
+    for j=1:length(y)
+        if x(i,j)==0 && y(i,j)==0
+              f(i,j)=0;
+        else 
+            f(i,j)=(x(i,j)*y(i,j))/(x(i,j)+y(i,j)-(x(i,j)*y(i,j)));
+        end
+    end
+end
+end

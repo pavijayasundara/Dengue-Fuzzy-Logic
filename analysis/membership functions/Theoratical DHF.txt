@@ -1,0 +1,21 @@
+
+ testS1P(1:501) = 3;
+IL1b= zeros([501 1]) ;
+
+[X1,Y1]=meshgrid(yS1P,yIL1b);
+H1=(X1.*Y1)./(X1+Y1-(X1.*Y1));
+[X2,Y2]=meshgrid(cTNF,cIL10);
+H2=(X2.*Y2)./(X2+Y2-(X2.*Y2));
+
+
+H3=(H2.*1)./(H2+1-(H2.*1));
+H3=(X3.*Y3)./(X3+Y3-(X3.*Y3));
+H4=(0.2).*H1+0.8.*H3
+[X,Y]=meshgrid(IL10,TNF);
+surf(X,Y,H4)
+
+
+yS1P,yIL1b=membership values of S1P,IL1b
+cPAF,cIL10,cTNF=concentrated membership values of PAF,IL10,TNF
+PAF,IL1b - fixed at 0
+S1P fixed at 3

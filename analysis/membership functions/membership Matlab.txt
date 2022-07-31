@@ -1,0 +1,63 @@
+function f=PAFfunc(x)
+    if x<=10
+        f=1;
+    elseif x<=50
+        f=(50-x)/40;
+    elseif x>50 
+        f=0;
+    else 
+        f=NaN;
+    end
+end
+
+
+function f=IL10func(x)
+    if x<=40
+        f=1;
+    elseif x<=75
+        f=1-2*((x-40)/70)^2;
+    elseif x<=110
+        f=2*((110-x)/70)^2;
+    elseif x>110
+        f=0;
+    else 
+        f=NaN;
+    end
+end
+
+
+function f=IL1bfunc(x)
+    if x<=1
+        f=1;
+    elseif x<=2
+        f=2-x;
+    elseif x>2
+        f=0;
+    else 
+        f=NaN;
+    end
+end
+
+function f=S1Pfunc(x)
+    if x<=0.3
+        f=0;
+    elseif x<=1.5
+        f=(x-0.3)/1.2;
+    elseif x>1.5
+        f=1;
+    else 
+        f=NaN;
+    end
+end
+
+function f=TNFfunc(x)
+    if x<=14
+        f=1;
+    elseif x<=30
+        f=(30-x)/16;
+    elseif x>30 
+        f=0;
+    else 
+        f=NaN;
+    end
+end
