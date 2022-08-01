@@ -1,1 +1,3 @@
 # Dengue-Fuzzy-Logic
+
+Dengue causes considerable morbidity and mortality in Sri Lanka. Inflammatory mediators such as cytokines, contribute to its evolution from an asymptotic infection to severe forms of dengue. We therefore, analyse the combined effect of multiple cytokines that interact dynamically with each other in order to generate a mathematical model to predict occurrence of Dengue Haemorrhagic Fever. The interactions of cytokines are mapped using Fuzzy Logic mechanisms with the combination of modified Hamacher and OWA operators. Trapezoidal membership functions are developed for each of the cytokine parameters and the degree of unfavourability to attain Dengue Haemorrhagic Fever is measured.
